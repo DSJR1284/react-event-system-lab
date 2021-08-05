@@ -2,20 +2,22 @@
 
 import React from 'react'
 
-const EyesOnMe = () => {
+class EyesOnMe extends React.Component {
 
-    onFocus = () => console.log('Good!')
+     onFocus = () => console.log('Good!')
 
-    onBlur = () => console.log('Hey! Eyes on me!')
-
-    return (
-        <div>
-          <button onFocus={this.onFocus} onBlur={this.onBlur}>
-        Eyes on me, please!
-      </button>
-        </div>
-    )
+     onBlur = () => console.log('Hey! Eyes on me!')    
+    
+     render() {
+         return (
+             <div>
+               <button onFocus={this.onFocus} onBlur={this.onBlur}>
+             Eyes on me, please!
+           </button>
+             </div>
+         )
+     }
 }
 
-export default EyesOnMe
+export default EyesOnMe;
 
